@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --textcolor: #05ff05
+  --bgcolor: #000000
+}
+body {
+  background-color: #141414;
+}
+div {
+  margin: 20px;
+}
+h1 {
+  color: #00ff00;
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+}
+
+label {
+  color: #00ff00;
+  font-size: 20px;
+  font-family: monospace;
+  margin: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>GPT Text Generator</h1>
+<form action="/action_page.php">
+  <label for="model">Model:</label>
+  <input type="text" id="model" name="model"><br><br>
+  <label for="max_tokens">Max Tokens:</label>
+  <input type="text" id="max_tokens" name="max_tokens"><br><br>
+  <label for="temperature">Temperature:</label>
+  <input type="text" id="temperature" name="temperature"><br><br>
+  <label for="n_completions">Number of Generations:</label>
+  <input type="text" id="n_completions" name="n_completions"><br><br>
+  <label for="stream">Stream?</label>
+  <input type="checkbox" id="stream" name="stream"><br><br>
+  <label for="n_completions">Number of Generations:</label>
+  <input type="text" id="n_completions" name="n_completions"><br><br>
+  <!--<label for="image">Image:</label>
+  <input type="file" accept="image/*"><br><br>-->
+  <label for="prompt">Prompt:</label>
+  <input type="text" id="prompt" name="prompt" required=required><br><br>
+  <div><input type="submit" value="Generate"></div>
+</form> 
+
+</body>
+</html>
